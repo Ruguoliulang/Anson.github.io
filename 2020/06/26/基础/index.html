@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>工厂模式 | bp50</title>
-  <meta name="keywords" content=" 设计模式 ">
-  <meta name="description" content="工厂模式 | bp50">
+  <title>mybatis | bp50</title>
+  <meta name="keywords" content=" 基础 ">
+  <meta name="description" content="mybatis | bp50">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="​    某天男孩遇到了一个很好的女孩子，她善良美好，而且男孩感觉她好像对自己也有那么一点点意思，于是问心里的小鹿：要不要撞一下，小鹿揉了揉磕的头破血流的脑袋，弱弱的说：要不还是算了吧。 ​    但是男孩不甘心，决定不听小鹿的决定在多试一次，结果。。小鹿撞死了。 ​    对了，你有没有过这种就是，自尊告诉你这不可能，经验告诉你这有风险，情理告诉你这毫无意义，内心却轻声和你说，试试看吧，然后现实">
 <meta property="og:type" content="article">
@@ -395,9 +395,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-工厂模式" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-基础" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">工厂模式</h1>
+        <h1 class="article-title">mybatis</h1>
     
     <div class="article-meta">
         
@@ -407,7 +407,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="设计模式">设计模式</a>
+            <a  data-rel="网络编程">网络编程</a>
             
         </span>
         
@@ -415,14 +415,14 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color5">设计模式</a>
+            <a class="color3">基础</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-06-24 21:04:06'>2020-06-24 09:33</time>
+            发布时间 : <time class="date" title='最后更新: 2020-06-26 20:55:18'>2020-06-26 17:22</time>
         
     </div>
     <div class="article-meta">
@@ -444,7 +444,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#1，什么是工厂模式？"><span class="toc-text">1，什么是工厂模式？</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2，工厂模式又分为：-简单工厂模式，工厂模式，抽象工厂模式。"><span class="toc-text">2，工厂模式又分为： 简单工厂模式，工厂模式，抽象工厂模式。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3，运用"><span class="toc-text">3，运用</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#“愿无所不能的c小姐给我动力！”"><span class="toc-text">“愿无所不能的c小姐给我动力！”</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是框架"><span class="toc-text">什么是框架</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三层架构"><span class="toc-text">三层架构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#为社么需要持久化？"><span class="toc-text">为社么需要持久化？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mybatis"><span class="toc-text">mybatis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#入门"><span class="toc-text">入门</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#为什么需要mybatis"><span class="toc-text">为什么需要mybatis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第一个程序"><span class="toc-text">第一个程序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#搭建环境"><span class="toc-text">搭建环境</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建一个模块"><span class="toc-text">创建一个模块</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -460,22 +460,65 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="1，什么是工厂模式？"><a href="#1，什么是工厂模式？" class="headerlink" title="1，什么是工厂模式？"></a>1，什么是工厂模式？</h5><p>​    工厂，，，工厂就是生产东西的，工厂模式就是类似这么样的一个情况。</p>
-<p>​    百度百科: 用工厂方法代替new操作的一种模式。</p>
-<h5 id="2，工厂模式又分为：-简单工厂模式，工厂模式，抽象工厂模式。"><a href="#2，工厂模式又分为：-简单工厂模式，工厂模式，抽象工厂模式。" class="headerlink" title="2，工厂模式又分为： 简单工厂模式，工厂模式，抽象工厂模式。"></a>2，工厂模式又分为： 简单工厂模式，工厂模式，抽象工厂模式。</h5><p>​    简单工厂模式：属于创建型模式，又叫做静态工厂方法模式，不属于23种设计模式之一，由一个工厂对象决定创建出哪一种产品类的实例，简单工厂模式是工厂模式家族中最简单实用的模式，可以理解为是不同工厂模式的一个特殊实现。</p>
-<p>​    工厂模式：工厂模式本质就是代替new创建对象。</p>
-<p>​    抽象工厂模式：抽象工厂模式是所有形态的工厂模式中最为抽象和最具一般性的一种形态，抽象工厂模式是指当有多个抽象角色时，使用的一种工厂模式。</p>
-<h5 id="3，运用"><a href="#3，运用" class="headerlink" title="3，运用"></a>3，运用</h5><p>​    A,简单工厂模式</p>
-<p>​    我去商店买水果，老板很懒，让我自己去拿（工厂类）</p>
-<p>1，创建一个水果接口</p>
+        <h1 id="“愿无所不能的c小姐给我动力！”"><a href="#“愿无所不能的c小姐给我动力！”" class="headerlink" title="“愿无所不能的c小姐给我动力！”"></a>“愿无所不能的c小姐给我动力！”</h1><p>​                                                                                                                                -又是元气满满（拉稀）的一天 </p>
+<h3 id="什么是框架"><a href="#什么是框架" class="headerlink" title="什么是框架"></a>什么是框架</h3><p>可被开发者应用的骨架，某种应用的半成品，一套问题的解决方案，不同框架解决不同的问题</p>
+<p>好处：</p>
+<p>使开发者极简的方式实现功能，提高开发效率。</p>
+<h3 id="三层架构"><a href="#三层架构" class="headerlink" title="三层架构"></a>三层架构</h3><p>表现层 ：展示数据</p>
+<p>业务层：处理业务需求</p>
+<p>持久层：和数据库交互的,    完成持久化工作的代码块，层是界限十分明显的。</p>
+<p>持久状态:只要不删除库一直存在</p>
+<p>内存 :断电就拜拜</p>
+<p>生活：冷藏，罐头。</p>
+<h3 id="为社么需要持久化？"><a href="#为社么需要持久化？" class="headerlink" title="为社么需要持久化？"></a>为社么需要持久化？</h3><p>有一些对象不能让它丢掉</p>
+<p>内存太贵了</p>
+<h3 id="mybatis"><a href="#mybatis" class="headerlink" title="mybatis"></a>mybatis</h3><p>基于Java的持久层框架，封装了jdbc(别问，我不知道jdbc是啥玩意)，使开发者只需要关注sql本身。无需创建驱动，无需创建链接，等繁杂操作。使用了orm思想实现了结果集的封装</p>
+<p>orm:对象关系映射。</p>
+<p>​    数据库的表和实体类及实体类的属性对应起来。让我们实现操作实体类就操作数据表</p>
+<h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><p>环境搭建</p>
+<p>安装：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.mybatis&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mybatis&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;3.5.2&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+
+<p>github :<a href="https://github.com/mybatis/mybatis-3" target="_blank" rel="noopener">https://github.com/mybatis/mybatis-3</a></p>
+<p>maven:<a href="https://mvnrepository.com/" target="_blank" rel="noopener">https://mvnrepository.com/</a></p>
+<p>mybatis:百度搜官方文档。</p>
+<p> 哈哈哈 徒手配置jdk,maven，以前看着脑袋都疼 。</p>
+<h3 id="为什么需要mybatis"><a href="#为什么需要mybatis" class="headerlink" title="为什么需要mybatis"></a>为什么需要mybatis</h3><ul>
+<li><p>方便。</p>
+</li>
+<li><p>传统的jdbc代码太复杂，简化，框架。</p>
+</li>
+<li><p>帮助开发者把数据存入数据库。</p>
+</li>
+<li><p>不用也可以。</p>
+</li>
+<li><p>特性：</p>
+<p>​        简单</p>
+<p>​        灵活</p>
+<p>​        sql和代码的分离，提高了可维护性</p>
+<p>​        提供映射标签，支持对象与数据库的orm字段关系映射</p>
+<p>​        提供对象关系映射标签，支持对象关系组建维护</p>
+<p>​        提供xml标签，支持动态编写sql</p>
+<p>最重要的一点：使用的人多。</p>
+<h3 id="第一个程序"><a href="#第一个程序" class="headerlink" title="第一个程序"></a>第一个程序</h3><p>思路 ：搭建环境，导入配置，编写程序，测试</p>
+<h4 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h4><p>1，操作数据库（纯命令操作</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE	`mybatis`;</span><br><span class="line">USE `mybatis`;</span><br><span class="line"></span><br><span class="line">CREATE TABLE `user`(</span><br><span class="line">`id` INT(<span class="number">20</span>) NOT NULL PRIMARY KEY,</span><br><span class="line">`name` VARCHAR(<span class="number">30</span>) DEFAULT NUll ,</span><br><span class="line">`pwd`  VARCHAR(<span class="number">30</span>) DEFAULT NUll</span><br><span class="line"></span><br><span class="line">)ENGINE=INNODB DEFAULT CHARSET=utf8;</span><br></pre></td></tr></table></figure>
+
+<p>2，新建项目</p>
+<p>​    新建普通maven项目</p>
+<p>​    删除src目录 ：可以帮刚才创建的项目当作父工程</p>
 <p>​    </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//商店</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Fruits</span></span>&#123;</span><br><span class="line">    <span class="comment">//描述</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">describe</span><span class="params">()</span></span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="number">2</span>.创建苹果</span><br><span class="line"><span class="comment">//苹果</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Apple</span> <span class="keyword">implements</span> <span class="title">Frutis</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">describe</span><span class="params">()</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"我是苹果"</span>)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="number">3</span>.创建香蕉</span><br><span class="line"><span class="comment">//香蕉</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Banana</span> <span class="keyword">implements</span> <span class="title">Fruits</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">describe</span><span class="params">()</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"我是香蕉"</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="number">4</span>.创建工厂类</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FruitsFactory</span></span>&#123;</span><br><span class="line">	<span class="comment">//获取苹果</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Apple <span class="title">createApple</span><span class="params">()</span></span>&#123;</span><br><span class="line">	 	<span class="keyword">return</span> <span class="keyword">new</span> Apple();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//获取香蕉</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Banana <span class="title">creatrBanana</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> Banana();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="number">5</span>,测试类</span><br><span class="line"><span class="comment">//测试类</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		Apple apple=FruisFactory.createApple();</span><br><span class="line">		apple.descrbe();</span><br><span class="line">		Banana banana=FruitsFactory.createBanana();</span><br><span class="line">		banana.describe();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//忽略丑比的格式，因为没调整 </span></span><br><span class="line">&lt;dependencies&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--导入依赖--&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;org.mybatis&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;mybatis&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;3.5.2&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;5.1.47&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">            &lt;dependency&gt;</span><br><span class="line">                &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">                &lt;version&gt;4.12&lt;/version&gt;</span><br><span class="line">                &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">            &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;/dependencies&gt;	</span><br><span class="line">    、</span><br></pre></td></tr></table></figure>
 
-<p>工厂模式</p>
-<p>我去商店想要买水果，跟老板指定水果名称，老板就会给我我想要的水果，水果</p>
-<p>1，创建一个水果描述的接口</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//水果	</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Fruits</span></span>&#123;</span><br><span class="line">    <span class="comment">//描述</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span>  <span class="title">describe</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//创建水果对应的对象并实现水果的接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Apple</span> <span class="keyword">implements</span> <span class="title">Fruist</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">describe</span><span class="params">()</span></span>&#123;</span><br><span class="line">        system.out.prinln(<span class="string">"我是苹果"</span>)；</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//香蕉</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Banana</span> <span class="keyword">implements</span> <span class="title">Fruits</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">descride</span><span class="params">()</span></span>&#123;</span><br><span class="line">        system.out.printlh(<span class="string">"我是香蕉"</span>)；</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//创建水果工厂</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FruitsFactory</span></span>&#123;</span><br><span class="line">    <span class="comment">//购买水果</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Fruits <span class="title">purchaseFruits</span><span class="params">(String name)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="string">"Apple"</span>.equals(name))&#123;</span><br><span class="line">            <span class="comment">//苹果</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Apple();</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(<span class="string">"Banana"</span>.equals(name))&#123;</span><br><span class="line">            <span class="comment">//香蕉</span></span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Banana();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="创建一个模块"><a href="#创建一个模块" class="headerlink" title="创建一个模块"></a>创建一个模块</h3><p>​    1.编写mybatis核心配置文件    </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span> ?&gt;</span><br><span class="line">&lt;!DOCTYPE configuration</span><br><span class="line">  PUBLIC <span class="string">"-//mybatis.org//DTD Config 3.0//EN"</span></span><br><span class="line">  <span class="string">"http://mybatis.org/dtd/mybatis-3-config.dtd"</span>&gt;</span><br><span class="line">&lt;configuration&gt;</span><br><span class="line">  &lt;environments <span class="keyword">default</span>=<span class="string">"development"</span>&gt;</span><br><span class="line">    &lt;environment id=<span class="string">"development"</span>&gt;</span><br><span class="line">      &lt;transactionManager type=<span class="string">"JDBC"</span>/&gt;</span><br><span class="line">      &lt;dataSource type=<span class="string">"POOLED"</span>&gt;</span><br><span class="line">        &lt;property name=<span class="string">"driver"</span> value=<span class="string">"$&#123;driver&#125;"</span>/&gt;</span><br><span class="line">        &lt;property name=<span class="string">"url"</span> value=<span class="string">"$&#123;url&#125;"</span>/&gt;</span><br><span class="line">        &lt;property name=<span class="string">"username"</span> value=<span class="string">"$&#123;username&#125;"</span>/&gt;</span><br><span class="line">        &lt;property name=<span class="string">"password"</span> value=<span class="string">"$&#123;password&#125;"</span>/&gt;</span><br><span class="line">      &lt;/dataSource&gt;</span><br><span class="line">    &lt;/environment&gt;</span><br><span class="line">  &lt;/environments&gt;</span><br><span class="line">  &lt;mappers&gt;</span><br><span class="line">    &lt;mapper resource=<span class="string">"org/mybatis/example/BlogMapper.xml"</span>/&gt;</span><br><span class="line">  &lt;/mappers&gt;</span><br><span class="line">&lt;/configuration&gt;</span><br></pre></td></tr></table></figure>
 
+
+
+<p>​    2.编写mybatis工具类</p>
+<p>​    3.</p>
 
       
        

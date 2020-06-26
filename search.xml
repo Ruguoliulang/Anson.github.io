@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>小鹿</title>
+      <link href="/2020/06/26/%E5%B0%8F%E9%B9%BF/"/>
+      <url>/2020/06/26/%E5%B0%8F%E9%B9%BF/</url>
+      
+        <content type="html"><![CDATA[<p>​    某天男孩遇到了一个很好的女孩子，她善良美好，而且男孩感觉她好像对自己也有那么一点点意思，于是问心里的小鹿：要不要撞一下，小鹿揉了揉磕的头破血流的脑袋，弱弱的说：要不还是算了吧。</p><p>​    但是男孩不甘心，决定不听小鹿的决定在多试一次，结果。。小鹿撞死了。</p><p>​    对了，你有没有过这种就是，自尊告诉你这不可能，经验告诉你这有风险，情理告诉你这毫无意义，内心却轻声和你说，试试看吧，然后现实告诉你，活该你输。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 睡前故事 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 睡前故事 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mybatis</title>
+      <link href="/2020/06/26/%E5%9F%BA%E7%A1%80/"/>
+      <url>/2020/06/26/%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="“愿无所不能的c小姐给我动力！”"><a href="#“愿无所不能的c小姐给我动力！”" class="headerlink" title="“愿无所不能的c小姐给我动力！”"></a>“愿无所不能的c小姐给我动力！”</h1><p>​                                                                                                                                -又是元气满满（拉稀）的一天 </p><h3 id="什么是框架"><a href="#什么是框架" class="headerlink" title="什么是框架"></a>什么是框架</h3><p>可被开发者应用的骨架，某种应用的半成品，一套问题的解决方案，不同框架解决不同的问题</p><p>好处：</p><p>使开发者极简的方式实现功能，提高开发效率。</p><h3 id="三层架构"><a href="#三层架构" class="headerlink" title="三层架构"></a>三层架构</h3><p>表现层 ：展示数据</p><p>业务层：处理业务需求</p><p>持久层：和数据库交互的,    完成持久化工作的代码块，层是界限十分明显的。</p><p>持久状态:只要不删除库一直存在</p><p>内存 :断电就拜拜</p><p>生活：冷藏，罐头。</p><h3 id="为社么需要持久化？"><a href="#为社么需要持久化？" class="headerlink" title="为社么需要持久化？"></a>为社么需要持久化？</h3><p>有一些对象不能让它丢掉</p><p>内存太贵了</p><h3 id="mybatis"><a href="#mybatis" class="headerlink" title="mybatis"></a>mybatis</h3><p>基于Java的持久层框架，封装了jdbc(别问，我不知道jdbc是啥玩意)，使开发者只需要关注sql本身。无需创建驱动，无需创建链接，等繁杂操作。使用了orm思想实现了结果集的封装</p><p>orm:对象关系映射。</p><p>​    数据库的表和实体类及实体类的属性对应起来。让我们实现操作实体类就操作数据表</p><h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><p>环境搭建</p><p>安装：</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.mybatis&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mybatis&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;3.5.2&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure><p>github :<a href="https://github.com/mybatis/mybatis-3" target="_blank" rel="noopener">https://github.com/mybatis/mybatis-3</a></p><p>maven:<a href="https://mvnrepository.com/" target="_blank" rel="noopener">https://mvnrepository.com/</a></p><p>mybatis:百度搜官方文档。</p><p> 哈哈哈 徒手配置jdk,maven，以前看着脑袋都疼 。</p><h3 id="为什么需要mybatis"><a href="#为什么需要mybatis" class="headerlink" title="为什么需要mybatis"></a>为什么需要mybatis</h3><ul><li><p>方便。</p></li><li><p>传统的jdbc代码太复杂，简化，框架。</p></li><li><p>帮助开发者把数据存入数据库。</p></li><li><p>不用也可以。</p></li><li><p>特性：</p><p>​        简单</p><p>​        灵活</p><p>​        sql和代码的分离，提高了可维护性</p><p>​        提供映射标签，支持对象与数据库的orm字段关系映射</p><p>​        提供对象关系映射标签，支持对象关系组建维护</p><p>​        提供xml标签，支持动态编写sql</p><p>最重要的一点：使用的人多。</p><h3 id="第一个程序"><a href="#第一个程序" class="headerlink" title="第一个程序"></a>第一个程序</h3><p>思路 ：搭建环境，导入配置，编写程序，测试</p><h4 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h4><p>1，操作数据库（纯命令操作</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE`mybatis`;</span><br><span class="line">USE `mybatis`;</span><br><span class="line"></span><br><span class="line">CREATE TABLE `user`(</span><br><span class="line">`id` INT(<span class="number">20</span>) NOT NULL PRIMARY KEY,</span><br><span class="line">`name` VARCHAR(<span class="number">30</span>) DEFAULT NUll ,</span><br><span class="line">`pwd`  VARCHAR(<span class="number">30</span>) DEFAULT NUll</span><br><span class="line"></span><br><span class="line">)ENGINE=INNODB DEFAULT CHARSET=utf8;</span><br></pre></td></tr></table></figure><p>2，新建项目</p><p>​    新建普通maven项目</p><p>​    删除src目录 ：可以帮刚才创建的项目当作父工程</p><p>​    </p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//忽略丑比的格式，因为没调整 </span></span><br><span class="line">&lt;dependencies&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!--导入依赖--&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;org.mybatis&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;mybatis&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;3.5.2&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;5.1.47&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">            &lt;dependency&gt;</span><br><span class="line">                &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">                &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">                &lt;version&gt;4.12&lt;/version&gt;</span><br><span class="line">                &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">            &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;/dependencies&gt;</span><br><span class="line">    、</span><br></pre></td></tr></table></figure></li></ul><h3 id="创建一个模块"><a href="#创建一个模块" class="headerlink" title="创建一个模块"></a>创建一个模块</h3><p>​    1.编写mybatis核心配置文件    </p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span> ?&gt;</span><br><span class="line">&lt;!DOCTYPE configuration</span><br><span class="line">  PUBLIC <span class="string">"-//mybatis.org//DTD Config 3.0//EN"</span></span><br><span class="line">  <span class="string">"http://mybatis.org/dtd/mybatis-3-config.dtd"</span>&gt;</span><br><span class="line">&lt;configuration&gt;</span><br><span class="line">  &lt;environments <span class="keyword">default</span>=<span class="string">"development"</span>&gt;</span><br><span class="line">    &lt;environment id=<span class="string">"development"</span>&gt;</span><br><span class="line">      &lt;transactionManager type=<span class="string">"JDBC"</span>/&gt;</span><br><span class="line">      &lt;dataSource type=<span class="string">"POOLED"</span>&gt;</span><br><span class="line">        &lt;property name=<span class="string">"driver"</span> value=<span class="string">"$&#123;driver&#125;"</span>/&gt;</span><br><span class="line">        &lt;property name=<span class="string">"url"</span> value=<span class="string">"$&#123;url&#125;"</span>/&gt;</span><br><span class="line">        &lt;property name=<span class="string">"username"</span> value=<span class="string">"$&#123;username&#125;"</span>/&gt;</span><br><span class="line">        &lt;property name=<span class="string">"password"</span> value=<span class="string">"$&#123;password&#125;"</span>/&gt;</span><br><span class="line">      &lt;/dataSource&gt;</span><br><span class="line">    &lt;/environment&gt;</span><br><span class="line">  &lt;/environments&gt;</span><br><span class="line">  &lt;mappers&gt;</span><br><span class="line">    &lt;mapper resource=<span class="string">"org/mybatis/example/BlogMapper.xml"</span>/&gt;</span><br><span class="line">  &lt;/mappers&gt;</span><br><span class="line">&lt;/configuration&gt;</span><br></pre></td></tr></table></figure><p>​    2.编写mybatis工具类</p><p>​    3.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Redis知多少</title>
+      <link href="/2020/06/26/Redis%E7%9F%A5%E5%A4%9A%E5%B0%91/"/>
+      <url>/2020/06/26/Redis%E7%9F%A5%E5%A4%9A%E5%B0%91/</url>
+      
+        <content type="html"><![CDATA[<p>​    今天又是混满的一天。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 缓存 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>高价服务</title>
       <link href="/2020/06/25/%E9%AB%98%E4%BB%B7%E6%9C%8D%E5%8A%A1/"/>
       <url>/2020/06/25/%E9%AB%98%E4%BB%B7%E6%9C%8D%E5%8A%A1/</url>
@@ -158,7 +233,7 @@
       <link href="/2020/06/22/%E6%AF%8F%E6%97%A5linux/"/>
       <url>/2020/06/22/%E6%AF%8F%E6%97%A5linux/</url>
       
-        <content type="html"><![CDATA[<h5 id="pwd-显示当前所在的位置"><a href="#pwd-显示当前所在的位置" class="headerlink" title="pwd :    显示当前所在的位置"></a>pwd :    显示当前所在的位置</h5><p>print working directory</p><p>场景：</p><p>通常不是在图形界面上进行操作，翻来翻去碰到结构差不多的目录就蒙了，这个时候用pwd就能很清晰的明确思路。</p><p>用法比较简单，在当前目录上直接输入即可。</p><p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1592826071426.png" alt="1592826071426"></p><h5 id="cd-切换目录。-返回上一级目录是cd-返回上一次所在的目录cd-进入当前目录的家目录-cd"><a href="#cd-切换目录。-返回上一级目录是cd-返回上一次所在的目录cd-进入当前目录的家目录-cd" class="headerlink" title="cd: 切换目录。 返回上一级目录是cd../返回上一次所在的目录cd -/进入当前目录的家目录 cd ~"></a>cd: 切换目录。 返回上一级目录是cd../返回上一次所在的目录cd -/进入当前目录的家目录 cd ~</h5><p>场景：</p><p>等同与点击进入该文件。</p><h5 id="mkdir-创建目录。-m-设置新目录的默认目录对应的权限。"><a href="#mkdir-创建目录。-m-设置新目录的默认目录对应的权限。" class="headerlink" title="mkdir :创建目录。-m: 设置新目录的默认目录对应的权限。"></a>mkdir :创建目录。-m: 设置新目录的默认目录对应的权限。</h5><p>使用：mkdir  +name .</p><h5 id="touch-：创建空文件或者改变文件的时间戳属性】"><a href="#touch-：创建空文件或者改变文件的时间戳属性】" class="headerlink" title="touch ：创建空文件或者改变文件的时间戳属性】"></a>touch ：创建空文件或者改变文件的时间戳属性】</h5><p>touch +name .格式</p><p>-a 改变指定文件最后访问时间： touch -a +name.格式</p>]]></content>
+        <content type="html"><![CDATA[<h5 id="pwd-显示当前所在的位置"><a href="#pwd-显示当前所在的位置" class="headerlink" title="pwd :    显示当前所在的位置"></a>pwd :    显示当前所在的位置</h5><p>print working directory</p><p>场景：</p><p>通常不是在图形界面上进行操作，翻来翻去碰到结构差不多的目录就蒙了，这个时候用pwd就能很清晰的明确思路。</p><p>用法比较简单，在当前目录上直接输入即可。</p><p><img src="C:%5CUsers%5CLenovo%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1592826071426.png" alt="1592826071426"></p><h5 id="cd-切换目录。-返回上一级目录是cd-返回上一次所在的目录cd-进入当前目录的家目录-cd"><a href="#cd-切换目录。-返回上一级目录是cd-返回上一次所在的目录cd-进入当前目录的家目录-cd" class="headerlink" title="cd: 切换目录。 返回上一级目录是cd../返回上一次所在的目录cd -/进入当前目录的家目录 cd ~"></a>cd: 切换目录。 返回上一级目录是cd../返回上一次所在的目录cd -/进入当前目录的家目录 cd ~</h5><p>场景：</p><p>等同与点击进入该文件。</p><h5 id="mkdir-创建目录。-m-设置新目录的默认目录对应的权限。"><a href="#mkdir-创建目录。-m-设置新目录的默认目录对应的权限。" class="headerlink" title="mkdir :创建目录。-m: 设置新目录的默认目录对应的权限。"></a>mkdir :创建目录。-m: 设置新目录的默认目录对应的权限。</h5><p>使用：mkdir  +name .</p><h5 id="touch-：创建空文件或者改变文件的时间戳属性】"><a href="#touch-：创建空文件或者改变文件的时间戳属性】" class="headerlink" title="touch ：创建空文件或者改变文件的时间戳属性】"></a>touch ：创建空文件或者改变文件的时间戳属性】</h5><p>touch +name .格式</p><p>-a 改变指定文件最后访问时间： touch -a +name.格式</p><h5 id="ls-显示目录下的内容及相关属性信息，-l-使用长格式列出文件及目录信息，-a显示目录下的所有文件，-r依相反顺序排列，-S根据文件大小排序，-X根据文件扩展名排序。"><a href="#ls-显示目录下的内容及相关属性信息，-l-使用长格式列出文件及目录信息，-a显示目录下的所有文件，-r依相反顺序排列，-S根据文件大小排序，-X根据文件扩展名排序。" class="headerlink" title="ls:显示目录下的内容及相关属性信息，-l 使用长格式列出文件及目录信息，-a显示目录下的所有文件，-r依相反顺序排列，-S根据文件大小排序，-X根据文件扩展名排序。"></a>ls:显示目录下的内容及相关属性信息，-l 使用长格式列出文件及目录信息，-a显示目录下的所有文件，-r依相反顺序排列，-S根据文件大小排序，-X根据文件扩展名排序。</h5><p>ls+参数。</p>]]></content>
       
       
       <categories>
